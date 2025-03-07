@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>DireNote Media</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/fontAwesome.css">
+        <link rel="stylesheet" href="css/tooplate-style.css">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/2.0.7/countUp.umd.js"></script>
+
+
+
+      
+          
+          
+
+        <style>
+            /* General styles */
+            body {
+                font-family: 'Open Sans', sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f5f5f5;
+            }
+
+            /* Menu container */
+              .menu-container {
+                  position: fixed;
+                  top: 50%;
+                  left: 0;
+                  transform: translateY(-50%);
+                  z-index: 1000;
+              }
+
+              /* Small arrow style */
+              .menu-arrow {
+                  /* Size of the arrow */
+                  width: 50px;
+                  height: 200px;
+                  line-height: 200px;
+
+                  /* Background and shape */
+                  background: rgba(0, 0, 0, 0.6);
+                  color: white;
+                  border-radius: 0 50% 50% 0;
+
+                  /* Text or symbol */
+                  font-size: 20px;
+                  text-align: center;
+
+                  /* Position and transitions */
+                  cursor: pointer;
+                  transition: opacity 0.3s ease, visibility 0s ease;
+              }
+
+              /* Menu list */
+              .menu-list {
+                  position: absolute; /* Align relative to the container */
+                  top: 50%; /* Move to vertical center */
+                  transform: translateY(-50%); /* Perfect center alignment */
+                  margin: 0; /* Remove margin */
+                  margin-left: 10px;
+                  padding: 0;
+                  list-style: none;
+                  display: none; /* Hidden by default */
+              }
+
+              .menu-list li {
+                  margin: 5px 0;
+              }
+
+              .menu-list a {
+                  display: block;
+                  padding: 10px 20px;
+                  text-decoration: none;
+                  color: white;
+                  background: rgba(0, 0, 0, 0.6);
+                  border-radius: 20px;
+                  transition: background 0.5s ease, transform 0.5s ease;
+              }
+
+              .menu-list a:hover {
+                  background: rgba(0, 0, 0, 0.8);
+                  transform: scale(1.05);
+              }
+
+              /* Hover effect to hide arrow and show menu */
+              .menu-container:hover .menu-arrow {
+                  opacity: 0;
+                  visibility: hidden;
+              }
+
+              .menu-container:hover .menu-list {
+                  display: block;
+              }
+
+        </style>
+    </head>
+    <body>
+        <!-- Menu Container -->
+        <div class="menu-container">
+            <!-- Small Arrow -->
+            <div class="menu-arrow">☰</div>
+            <!-- Menu List -->
+            <ul class="menu-list">
+              <li><a href="index.html">Home</a></li>
+                
+              <li><a href="services.html">Services</a></li>
+              <li><a href="https://runixks.blogspot.com/">Blog</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="faqs.html">FAQs</a></li>
+            </ul>
+        </div>
+
+    
+
+        
+
+        <section class="first-section">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="text-content">
+                  <h2>About</h2>
+                  <div class="line-dec"></div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="second-section">
+          <div class="container">
+            <div class="row">
+
+                <div class="faq-section" style="flex: 1; padding: 20px; background: transparent; ">
+	
+					<br><br>
+					<div class="faq" style="margin-bottom: 20px;">
+						<h3 style="cursor: pointer; color: var(--darker-sky-blue);">1. Why do the total releases on the homepage differ from the total tracks I submitted in the catalog?</h3>
+						<p class="answer" style="display: none;">The total releases displayed on the homepage reflect only the completed, released, or delivered tracks. In contrast, the catalog includes tracks that may be pending, approved, or rejected.</p>
+					</div>
+					<div class="faq" style="margin-bottom: 20px;">
+						<h3 style="cursor: pointer; color: var(--darker-sky-blue);">2. What are average listeners?</h3>
+						<p class="answer" style="display: none;">Average listeners refer to the mean number of streams you receive during each revenue report update period.</p>
+					</div>
+					<div class="faq" style="margin-bottom: 20px;">
+						<h3 style="cursor: pointer; color: var(--darker-sky-blue);">3. When will my total revenue be updated?</h3>
+						<p class="answer" style="display: none;">Your total revenue is updated approximately every 3 to 4 months.</p>
+					</div>
+										
+
+						<div class="faq" style="margin-bottom: 20px;">
+							<h3 style="cursor: pointer; color: var(--darker-sky-blue);">4. How do I submit an album, EP, or mixtape?</h3>
+							<p class="answer" style="display: none;">To submit an album, EP, or mixtape, enter the title of the project in the "ALBUM NAME" field and list the individual track names in the "TRACK NAME" field. Ensure you select the appropriate release type—album, EP, or mixtape. You can submit multiple tracks from a project by providing details for each track individually, but make sure the album name and cover art are consistent across submissions.</p>
+						</div>
+						<div class="faq" style="margin-bottom: 20px;">
+							<h3 style="cursor: pointer; color: var(--darker-sky-blue);">5. What are ISRC and UPC?</h3>
+							<p class="answer" style="display: none;">ISRC (International Standard Recording Code) is a unique identifier for sound recordings, while UPC (Universal Product Code) is a barcode used for tracking products. Both codes are essential for distribution and sales tracking.</p>
+						</div>
+
+                        <button id="explore-more" style="background: var(--darker-sky-blue); color: #262727; padding: 10px 15px; border: none; border-radius: 5px; cursor: pointer; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);">Read More</button>
+                        <div id="additional-faqs" style="display: none;">
+
+						<div class="faq" style="margin-bottom: 20px;">
+							<h3 style="cursor: pointer; color: var(--darker-sky-blue);">6. How do I shift tracks to DireNote Media from another distributor?</h3>
+							<p class="answer" style="display: none;">To shift your tracks, follow these steps:<br>First, ask if the takedown is possible for your tracks. If they confirm, hold off on requesting the takedown immediately. Request the UPC and ISRC codes for your tracks from the current distributor. Send us all track details, including the UPC and ISRC codes, so we can proceed with distribution. Once we distribute the tracks on our end, inform them to proceed with the takedown.</p>
+						</div>
+						<div class="faq" style="margin-bottom: 20px;">
+							<h3 style="cursor: pointer; color: var(--darker-sky-blue);">7. How quickly can I release tracks?</h3>
+							<p class="answer" style="display: none;">You can release tracks as fast as 2 days. However, the timeline generally depends on your subscription plan and the type of content—whether it’s original music or a free-for-profit beat.</p>
+						</div>
+						<div class="faq" style="margin-bottom: 20px;">
+							<h3 style="cursor: pointer; color: var(--darker-sky-blue);">8. What do the C and P lines mean?</h3>
+							<p class="answer" style="display: none;">The C line (Copyright) indicates the copyright owner of the music, while the P line (Phonorecord) identifies the owner of the sound recording. These lines are important for protecting your intellectual property.</p>
+						</div>
+						<div class="faq" style="margin-bottom: 20px;">
+							<h3 style="cursor: pointer; color: var(--darker-sky-blue);">9. What is YouTube Content ID?</h3>
+							<p class="answer" style="display: none;">YouTube Content ID is a digital rights management system that allows copyright holders to identify and manage their content on YouTube. It scans uploaded videos against a database of files submitted by rights holders, enabling them to block, monetize, or track videos that contain their music.</p>
+						</div>
+						<div class="faq" style="margin-bottom: 20px;">
+							<h3 style="cursor: pointer; color: var(--darker-sky-blue);">10. What is CRBT (Caller Ring Back Tone)?</h3>
+							<p class="answer" style="display: none;">CRBT allows mobile users to personalize the tone callers hear while waiting for their call to be answered. Instead of a standard ringtone, callers can listen to a selected song, providing artists with an additional revenue stream when users pay to set their favorite songs as their ring back tones.</p>
+						</div>
+						<div class="faq" style="margin-bottom: 20px;">
+							<h3 style="cursor: pointer; color: var(--darker-sky-blue);">11. How do I submit an audio file and album cover?</h3>
+							<p class="answer" style="display: none;">To submit your audio file and album cover, first upload them to a file-sharing service like WeTransfer or Dropbox. After uploading, copy the sharing link and paste it into the "New Release" form when submitting your music.</p>
+						</div>
+						<div class="faq" style="margin-bottom: 20px;">
+							<h3 style="cursor: pointer; color: var(--darker-sky-blue);">12. Why is my track submission not updated in the catalog?</h3>
+							<p class="answer" style="display: none;">It may take up to 24 hours for new submissions to reflect in the catalog due to the processing time required to review and approve the submitted tracks.</p>
+						</div>
+						<div class="faq" style="margin-bottom: 20px;">
+							<h3 style="cursor: pointer; color: var(--darker-sky-blue);">13. What are smart links, and how do I claim them?</h3>
+							<p class="answer" style="display: none;">Smart links are landing pages that aggregate links to various streaming platforms for your track. They allow listeners to access your music easily, and you can share these links anywhere. We provide a smart link for each track you release within 24 hours of its release.</p>
+						</div>
+						<div class="faq" style="margin-bottom: 20px;">
+							<h3 style="cursor: pointer; color: var(--darker-sky-blue);">14. When will I get my revenue report?</h3>
+							<p class="answer" style="display: none;">You will receive your revenue report every 3 to 4 months, providing a detailed breakdown of your earnings from streaming, sales, and other sources.</p>
+						</div>
+						<div class="faq" style="margin-bottom: 20px;">
+							<h3 style="cursor: pointer; color: var(--darker-sky-blue);">15. Where can I find my analytics report?</h3>
+							<p class="answer" style="display: none;">Currently, we do not have a separate page for analytics. However, each time you receive a revenue report, it will include the total streams for each of your tracks, allowing you to track your performance.</p>
+						</div>
+						<div class="faq" style="margin-bottom: 20px;">
+							<h3 style="cursor: pointer; color: var(--darker-sky-blue);">16. How do I update the information of a track after distribution?</h3>
+							<p class="answer" style="display: none;">To update track information after distribution, please contact us via the contact form in the help section or message us on WhatsApp. Note that there are limitations on which details can be updated after release.</p>
+						</div>
+						<div class="faq" style="margin-bottom: 20px;">
+							<h3 style="cursor: pointer; color: var(--darker-sky-blue);">17. How do I takedown a track?</h3>
+							<p class="answer" style="display: none;">To initiate the takedown of a track, contact us via the contact form in the help section or send us a message on WhatsApp. We will guide you through the process, keeping in mind specific conditions or requirements.</p>
+						</div>
+						<div class="faq" style="margin-bottom: 20px;">
+							<h3 style="cursor: pointer; color: var(--darker-sky-blue);">18. How do I add a featuring artist in track submission?</h3>
+							<p class="answer" style="display: none;">To add a featuring artist, separate their name with "ft." followed by a comma. This format should also be used for the Spotify link.</p>
+						</div>
+						<div class="faq" style="margin-bottom: 20px;">
+							<h3 style="cursor: pointer; color: var(--darker-sky-blue);">19. How do I withdraw revenue?</h3>
+							<p class="answer" style="display: none;">To withdraw your revenue, please contact us via the contact form in the help section or message us on WhatsApp. We will provide the necessary instructions for the withdrawal process, along with any specific requirements.</p>
+						</div>
+						<div class="faq" style="margin-bottom: 20px;">
+							<h3 style="cursor: pointer; color: var(--darker-sky-blue);">20. Can I submit tracks with a free-for-profit beat?</h3>
+							<p class="answer" style="display: none;">Yes, you can submit tracks using a free-for-profit beat. Simply select "Free for Profit Beat" in the content type section during submission.</p>
+						</div>
+						<div class="faq" style="margin-bottom: 20px;">
+							<h3 style="cursor: pointer; color: var(--darker-sky-blue);">21. Can I release cover songs?</h3>
+							<p class="answer" style="display: none;">No, you cannot release cover songs through our platform, as they require specific licensing agreements.</p>
+						</div>
+						<div class="faq" style="margin-bottom: 20px;">
+							<h3 style="cursor: pointer; color: var(--darker-sky-blue);">22. What should I do if I mistakenly submitted a free-for-profit beat as original?</h3>
+							<p class="answer" style="display: none;">If you mistakenly submitted a free-for-profit beat as an original track, inform us within 24 hours of your submission. Failure to do so could result in account termination due to policy violations.</p>
+						</div>
+						<div class="faq" style="margin-bottom: 20px;">
+							<h3 style="cursor: pointer; color: var(--darker-sky-blue);">23. How do I update my personal information?</h3>
+							<p class="answer" style="display: none;">To update your personal information, please contact us via the contact form in the help section or message us on WhatsApp. We will assist you with the necessary steps.</p>
+						</div>
+						<div class="faq" style="margin-bottom: 20px;">
+							<h3 style="cursor: pointer; color: var(--darker-sky-blue);">24. How do I contact DireNote Media for any issue or query?</h3>
+							<p class="answer" style="display: none;">You can contact DireNote Media for any issues or queries by using the contact form in the help section or reaching out to us via WhatsApp for immediate assistance.</p>
+						</div>
+						<div class="faq" style="margin-bottom: 20px;">
+							<h3 style="cursor: pointer; color: var(--darker-sky-blue);">25. Is there any referral benefit if I get my friend into DireNote Media too?</h3>
+							<p class="answer" style="display: none;">Yes, we offer a referral benefit! If you refer a friend to DireNote Media, we can provide them with a discount on their services.</p>
+						</div>
+						
+												
+					</div>
+                </div>
+
+            </div>
+          </div>
+        </section>
+
+        <style>
+
+            .faq h3 {
+                font-size: 20px;
+                font-weight: bold;
+            }
+            .faq p {
+                font-size: 20px;
+            }
+
+        </style>
+        
+		<script>
+			// FAQ Toggle Script
+			const faqs = document.querySelectorAll('.faq h3');
+			faqs.forEach(faq => {
+				faq.addEventListener('click', () => {
+					const answer = faq.nextElementSibling;
+					answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+				});
+			});
+		
+			// Explore More Button
+			const exploreMoreBtn = document.getElementById('explore-more');
+			const additionalFaqs = document.getElementById('additional-faqs');
+			exploreMoreBtn.addEventListener('click', () => {
+				additionalFaqs.style.display = 'block';
+				exploreMoreBtn.style.display = 'none'; // Hide the button after expansion
+			});
+		</script>
+       
+
+        
+
+        <footer>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <ul>
+                  <li><a href="https://www.instagram.com/thedirenotemedia/"><i class="fa fa-instagram"></i></a></li>
+                  <li><a href="https://wa.link/pemyv1"><i class="fa fa-whatsapp"></i></a></li>
+                  <li><a href="mailto:contact@direnotemedia.com"><i class="fa fa-envelope"></i></a></li>
+                </ul>
+                
+                <p>Copyright &copy; 2025 DireNote Media 
+                        
+                        | part of Rezonate</p>
+              </div>
+            </div>
+          </div>
+        </footer>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+        <script src="js/vendor/bootstrap.min.js"></script>
+
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <script src="https://app.embed.im/spark.js" defer></script>
+
+    </body>
+</html>

@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>DireNote Media</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/fontAwesome.css">
+        <link rel="stylesheet" href="css/tooplate-style.css">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/2.0.7/countUp.umd.js"></script>
+
+
+
+        <script>
+          document.addEventListener("DOMContentLoaded", function () {
+            const options = { duration: 10 }; // Counter duration (3 seconds)
+          
+            // Initialize counters using CountUp
+            const counter1 = new countUp.CountUp('counter1', 200, options);
+            const counter2 = new countUp.CountUp('counter2', 100, options);
+            const counter3 = new countUp.CountUp('counter3', 4, options);
+            const counter4 = new countUp.CountUp('counter4', 25, options);
+          
+            // Start all counters and check for errors
+            [counter1, counter2, counter3, counter4].forEach(counter => {
+              if (!counter.error) {
+                counter.start();
+              } else {
+                console.error(counter.error);
+              }
+            });
+          });
+          </script>
+          
+          
+
+        <style>
+            /* General styles */
+            body {
+                font-family: 'Open Sans', sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f5f5f5;
+            }
+
+            /* Menu container */
+              .menu-container {
+                  position: fixed;
+                  top: 50%;
+                  left: 0;
+                  transform: translateY(-50%);
+                  z-index: 1000;
+              }
+
+              /* Small arrow style */
+              .menu-arrow {
+                  /* Size of the arrow */
+                  width: 50px;
+                  height: 200px;
+                  line-height: 200px;
+
+                  /* Background and shape */
+                  background: rgba(0, 0, 0, 0.6);
+                  color: white;
+                  border-radius: 0 50% 50% 0;
+
+                  /* Text or symbol */
+                  font-size: 20px;
+                  text-align: center;
+
+                  /* Position and transitions */
+                  cursor: pointer;
+                  transition: opacity 0.3s ease, visibility 0s ease;
+              }
+
+              /* Menu list */
+              .menu-list {
+                  position: absolute; /* Align relative to the container */
+                  top: 50%; /* Move to vertical center */
+                  transform: translateY(-50%); /* Perfect center alignment */
+                  margin: 0; /* Remove margin */
+                  margin-left: 10px;
+                  padding: 0;
+                  list-style: none;
+                  display: none; /* Hidden by default */
+              }
+
+              .menu-list li {
+                  margin: 5px 0;
+              }
+
+              .menu-list a {
+                  display: block;
+                  padding: 10px 20px;
+                  text-decoration: none;
+                  color: white;
+                  background: rgba(0, 0, 0, 0.6);
+                  border-radius: 20px;
+                  transition: background 0.5s ease, transform 0.5s ease;
+              }
+
+              .menu-list a:hover {
+                  background: rgba(0, 0, 0, 0.8);
+                  transform: scale(1.05);
+              }
+
+              /* Hover effect to hide arrow and show menu */
+              .menu-container:hover .menu-arrow {
+                  opacity: 0;
+                  visibility: hidden;
+              }
+
+              .menu-container:hover .menu-list {
+                  display: block;
+              }
+
+        </style>
+    </head>
+    <body>
+        <!-- Menu Container -->
+        <div class="menu-container">
+            <!-- Small Arrow -->
+            <div class="menu-arrow">☰</div>
+            <!-- Menu List -->
+            <ul class="menu-list">
+                <li><a href="index.html">Home</a></li>
+                
+                <li><a href="services.html">Services</a></li>
+                <li><a href="https://runixks.blogspot.com/">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="faqs.html">FAQs</a></li>
+
+            </ul>
+        </div>
+
+    
+
+        
+
+        <section class="first-section">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="text-content">
+                  <h2>DireNote Media</h2>
+                  <div class="line-dec"></div>
+                  <span>Where Music &amp; takes Flight...</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="second-section">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3 col-sm-6">
+                <div class="service-item">
+                  <div class="icon">
+                    <img src="img/distr.png" alt="">
+                  </div>
+                  <h4>Music Distribution</h4>
+                  <p>Get your music on all major streaming platforms like Spotify, Apple Music, and YouTube Music with ease. We ensure a smooth and fast distribution process, helping artists reach a global audience.</p>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <div class="service-item">
+                  <div class="icon">
+                    <img src="img/prom.png" alt="">
+                  </div>
+                  <h4>Music Promotion</h4>
+                  <p>Stand out in the crowd with our strategic music promotion services. From playlist pitching to social media marketing, we amplify your reach and help your tracks gain the recognition they deserve.</p>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <div class="service-item">
+                  <div class="icon">
+                    <img src="img/prod.png" alt="">
+                  </div>
+                  <h4>Music Production</h4>
+                  <p>Whether you need beats, mixing, mastering, or full-scale production, we’ve got you covered. Work with our experienced producers to create industry-quality music tailored to your style.</p>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <div class="service-item">
+                  <div class="icon">
+                    <img src="img/synop.png" alt="">
+                  </div>
+                  <h4>Personal Website</h4>
+                  <p>aka Artist Synopsis, Establish your online presence with a professional personal website. Showcase your music, portfolio, and brand identity in one place, making it easier for fans and industry professionals to connect with you.</p>
+                </div>
+              </div>
+              
+              
+            </div>
+          </div>
+          <div style="display: flex; justify-content: center; align-items: center;">
+            <a href="services.html" 
+               style="display: inline-block; background-color: #2b2b2b; color: white; padding: 12px 20px; border-radius: 8px; text-decoration: none; font-weight: bold; transition: background 0.3s ease;">
+                View More
+            </a>
+        </div>
+        </section>
+
+        <section class="third-section">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-10 col-md-offset-1 text-center">
+
+
+        
+                <!-- Counter Section -->
+                <div class="col-md-3 counter-box">
+                  <h4>Tracks Distributed</h4>
+                  <div class="counter" id="counter1" data-count="150">0</div>
+                </div>
+                <div class="col-md-3 counter-box">
+                  <h4>Artists Worked with</h4>
+                  <div class="counter" id="counter2" data-count="80">0</div>
+                </div>
+                <div class="col-md-3 counter-box">
+                  <h4>Years of Experience</h4>
+                  <div class="counter" id="counter3" data-count="4">0</div>
+                </div>
+                <div class="col-md-3 counter-box">
+                  <h4>xyz</h4>
+                  <div class="counter" id="counter4" data-count="4">0</div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </section>
+        
+
+        <section class="fourth-section">
+          <div class="container">
+            
+            <script src="https://static.elfsight.com/platform/platform.js" async></script>
+<div class="elfsight-app-c5479df6-0e3c-4fdc-b9ab-8f1c6dc94126" data-elfsight-app-lazy></div> 
+            
+          </div>
+        </section>
+
+        <section class="fivth-section">
+          <div class="container">
+           <br><br>
+            <script src="https://static.elfsight.com/platform/platform.js" async></script>
+<div class="elfsight-app-8dea8d02-05c8-43f4-aaf5-4e6840e00f9f" data-elfsight-app-lazy></div>
+
+          </div>
+        </section>
+
+        <section class="sixth-section">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="row">
+                  <form id="contact" action="" method="post">
+                    <div class="col-md-6">
+                      <fieldset>
+                        <input name="name" type="text" class="form-control" id="name" placeholder="Your name..." required>
+                      </fieldset>
+                    </div>
+                    <div class="col-md-6">
+                      <fieldset>
+                        <input name="email" type="email" class="form-control" id="email" placeholder="Your email..." required>
+                      </fieldset>
+                    </div>
+                    <div class="col-md-12">
+                      <fieldset>
+                        <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your message..." required></textarea>
+                      </fieldset>
+                    </div>
+                    <div class="col-md-12">
+                      <fieldset>
+                        <button type="submit" id="form-submit" class="btn">Send Message</button>
+                      </fieldset>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="col-md-5">
+                <div class="right-info">
+                  <ul>
+                    <li><a href="#"><i class="fa fa-envelope"></i>contact@direnotemedia.com</a></li>
+                    <li><a href="#"><i class="fa fa-phone"></i>8400089</a></li>
+                    <li><a href="#"><i class="fa fa-map-marker"></i>Lucknow, Uttar Pradesh</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <footer>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <ul>
+                  <li><a href="https://www.instagram.com/thedirenotemedia/"><i class="fa fa-instagram"></i></a></li>
+                  <li><a href="https://wa.link/pemyv1"><i class="fa fa-whatsapp"></i></a></li>
+                  <li><a href="mailto:contact@direnotemedia.com"><i class="fa fa-envelope"></i></a></li>
+                </ul>
+                
+                <p>Copyright &copy; 2025 DireNote Media 
+                        
+                        | part of Rezonate</p>
+              </div>
+            </div>
+          </div>
+        </footer>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+        <script src="js/vendor/bootstrap.min.js"></script>
+
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <script src="https://app.embed.im/spark.js" defer></script>
+
+    </body>
+</html>

@@ -1,0 +1,613 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>DireNote Media</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/fontAwesome.css">
+        <link rel="stylesheet" href="css/tooplate-style.css">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/2.0.7/countUp.umd.js"></script>
+
+
+
+       
+          
+          
+
+        <style>
+            /* General styles */
+            body {
+                font-family: 'Open Sans', sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f5f5f5;
+            }
+
+            /* Menu container */
+              .menu-container {
+                  position: fixed;
+                  top: 50%;
+                  left: 0;
+                  transform: translateY(-50%);
+                  z-index: 1000;
+              }
+
+              /* Small arrow style */
+              .menu-arrow {
+                  /* Size of the arrow */
+                  width: 50px;
+                  height: 200px;
+                  line-height: 200px;
+
+                  /* Background and shape */
+                  background: rgba(0, 0, 0, 0.6);
+                  color: white;
+                  border-radius: 0 50% 50% 0;
+
+                  /* Text or symbol */
+                  font-size: 20px;
+                  text-align: center;
+
+                  /* Position and transitions */
+                  cursor: pointer;
+                  transition: opacity 0.3s ease, visibility 0s ease;
+              }
+
+              /* Menu list */
+              .menu-list {
+                  position: absolute; /* Align relative to the container */
+                  top: 50%; /* Move to vertical center */
+                  transform: translateY(-50%); /* Perfect center alignment */
+                  margin: 0; /* Remove margin */
+                  margin-left: 10px;
+                  padding: 0;
+                  list-style: none;
+                  display: none; /* Hidden by default */
+              }
+
+              .menu-list li {
+                  margin: 5px 0;
+              }
+
+              .menu-list a {
+                  display: block;
+                  padding: 10px 20px;
+                  text-decoration: none;
+                  color: white;
+                  background: rgba(0, 0, 0, 0.6);
+                  border-radius: 20px;
+                  transition: background 0.5s ease, transform 0.5s ease;
+              }
+
+              .menu-list a:hover {
+                  background: rgba(0, 0, 0, 0.8);
+                  transform: scale(1.05);
+              }
+
+              /* Hover effect to hide arrow and show menu */
+              .menu-container:hover .menu-arrow {
+                  opacity: 0;
+                  visibility: hidden;
+              }
+
+              .menu-container:hover .menu-list {
+                  display: block;
+              }
+
+        </style>
+    </head>
+    <body>
+        <!-- Menu Container -->
+        <div class="menu-container">
+            <!-- Small Arrow -->
+            <div class="menu-arrow">☰</div>
+            <!-- Menu List -->
+            <ul class="menu-list">
+                <li><a href="index.html">Home</a></li>
+                
+                <li><a href="services.html">Services</a></li>
+                <li><a href="https://runixks.blogspot.com/">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="faqs.html">FAQs</a></li>
+            </ul>
+        </div>
+
+    
+
+        
+
+        <section class="first-section">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="text-content">
+                  <h2>music distribution</h2>
+                  <div class="line-dec"></div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="distribution-plans">
+
+          
+          <style>
+          
+                  .container {
+                      max-width: 1400px;
+                      margin: 0 auto;
+                      padding: 20px;
+                      text-align: center;
+                  }
+          
+                  /* Pricing Table Widget */
+                  .pricing-container {
+                      display: flex;
+                      justify-content: space-between;
+                      gap: 20px;
+                      margin-top: 50px;
+                      padding: 0 20px; /* Left-right padding */
+                  }
+          
+                  .pricing-card {
+    width: calc(33.3% - 20px);
+    background: transparent;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    text-align: left;
+    transition: transform 0.3s ease-in-out;
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Ensures all cards have equal height */
+}
+          
+                  .pricing-card:hover {
+                      transform: scale(1.05);
+                  }
+          
+                  .plan-title {
+                      font-size: 35px;
+                      font-weight: bold;
+                      color: rgb(0, 0, 0);
+                  }
+          
+                  .plan-subtitle {
+                      font-size: 14px;
+                      color: #000000;
+                      margin-bottom: 15px;
+                  }
+          
+                  .plan-features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1; /* Pushes footer to the bottom */
+}
+
+.plan-footer {
+    margin-top: auto; /* Forces footer to stick at the bottom */
+    text-align: left;
+}
+          
+                  .plan-features li {
+                      padding: 10px 0;
+                      border-bottom: 1px solid #444;
+                      font-size: 16px;
+                      color: rgb(0, 0, 0);
+                  }
+          
+                  .plan-price {
+    margin-bottom: 10px;
+    color: rgb(0, 0, 0);
+}
+          
+                  .price {
+                      font-size: 26px;
+                      font-weight: bold;
+                  }
+          
+                  .sale-text {
+                      display: block;
+                      font-size: 14px;
+                      color: red;
+                      font-weight: bold;
+                      margin-top: 5px;
+                  }
+          
+                  .plan-button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    background: #3a3a3a;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+          
+                  .plan-button:hover {
+                      background: #e68900;
+                  }
+          
+                  .tooltip {
+                      background: #555;
+                      border-radius: 50%;
+                      padding: 2px 6px;
+                      font-size: 12px;
+                      cursor: pointer;
+                  }
+          
+                  /* Responsive Design */
+                  @media (max-width: 900px) {
+                      .pricing-container {
+                          flex-direction: column;
+                          align-items: center;
+                      }
+          
+                      .pricing-card {
+                          width: 90%;
+                          margin-bottom: 20px;
+                      }
+                  }
+              </style>
+         
+          <div class="container">
+           
+          
+              <!-- Pricing Table Widget -->
+              <div class="pricing-container">
+                  <div class="pricing-card">
+                      <h2 class="plan-title">Carbon Plan</h2>
+                      <p class="plan-subtitle">For single artist</p>
+                      <ul class="plan-features">
+                          <li><strong>Single Track</strong></li>
+                          <li>Available for Lifetime <span class="tooltip">?</span></li>
+                          <li>Release within 5-7 Working Days</li>
+                          <li>Spotify Verification</li>
+                          <li>Youtube Content ID <span class="tooltip">?</span></li>
+                          <li>90% Revenue</li>
+                          <li>Whatsapp and Email Support</li>
+                      </ul>
+                      <br><br>
+                      <div class="plan-footer">
+                      <div class="plan-price">
+                          <span class="price">₹49</span>
+                          <span class="sale-text">ON SALE - SAVE 52%</span>
+                      </div>
+                      <button class="plan-button">Know More</button>
+                  </div>
+                  </div>
+                  <div class="pricing-card">
+                      <h2 class="plan-title">Golden Plan</h2>
+                      <p class="plan-subtitle">For single artist</p>
+                      <ul class="plan-features">
+                          <li><strong>Unlimited Tracks</strong></li>
+                          <li>Available for Lifetime <span class="tooltip">?</span></li>
+                          <li>Release within 3-4 Working Days</li>
+                          <li>Spotify Verification</li>
+                          <li>Youtube Content ID <span class="tooltip">?</span></li>
+                          <li>90% Revenue</li>
+                          <li>Dashboard Access</li>
+                          <li>Revenue Report</li>
+                          <li>Whatsapp, Call and Email Support</li>
+                      </ul>
+                      <br><br>
+                      <div class="plan-footer">
+                      <div class="plan-price">
+                          <span class="price">₹399/year</span>
+                          <span class="sale-text">ON SALE - SAVE 40%</span>
+                      </div>
+                      <button class="plan-button">Know More</button>
+                  </div>
+                  </div>
+          
+                  <div class="pricing-card">
+                      <h2 class="plan-title">Diamond Plan</h2>
+                      <p class="plan-subtitle">For single artist</p>
+                      <ul class="plan-features">
+                          <li><strong>Unlimited Tracks</strong></li>
+                          <li>Available for Lifetime <span class="tooltip">?</span></li>
+                          <li>Release within 2 Working Days</li>
+                          <li>Spotify Verification</li>
+                          <li>Youtube Content ID <span class="tooltip">?</span></li>
+                          <li>90% Revenue</li>
+                          <li>Dashboard Access</li>
+                          <li>Revenue Report</li>
+                          <li>Whatsapp, Call and Email Support</li>
+                          <li>Personal Website</li>
+                          <li>Youtube OAC</li>
+                          <li>C and P line</li>
+                          <li>Basic Album Cover</li>
+                          <li>Basic Promotion</li>
+                      </ul>
+                      <br><br>
+                      <div class="plan-footer">
+                      <div class="plan-price">
+                          <span class="price">₹1299/year</span>
+                          <span class="sale-text">ON SALE - SAVE 30%</span>
+                      </div>
+                      <button class="plan-button">Know More</button>
+                  </div>
+              </div>
+              </div>
+          
+             
+          </div>
+          
+        
+            
+        </section>
+
+        <section class="third-section">
+
+          <style>
+            /* Container */
+            .labelplan-container {
+                width: 100vw;
+                max-width: 100%;
+                margin: 0 auto;
+                padding: 20px;
+                display: flex;
+                justify-content: center; /* Centering */
+                align-items: center;
+                flex-wrap: wrap;
+            }
+        
+            /* Pricing Card */
+            .labelplan-card {
+                width: 90%; /* Full width */
+                max-width: 1400px; /* Expands to max width */
+                background: transparent;
+                border-radius: 12px;
+                
+                padding: 20px;
+                text-align: center;
+
+            }
+        
+
+            /* Plan Title */
+            .labelplan-title {
+                font-size: 35px;
+                font-weight: bold;
+                color: rgb(255, 255, 255);
+            }
+        
+            /* Plan Subtitle */
+            .labelplan-subtitle {
+                font-size: 14px;
+                color: #9c9c9c;
+                margin-bottom: 15px;
+            }
+        
+            /* Features Grid */
+            .labelplan-features {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* 4-5 per line */
+                gap: 10px;
+                padding: 0;
+                margin: 20px 0;
+                list-style: none;
+                text-align: center;
+            }
+        
+            /* Feature Box */
+            .labelplan-feature-item {
+                padding: 10px;
+                font-size: 16px;
+                color: #ffffff; /* Change feature text color */
+                border-bottom: 1px solid #ccc; /* Underline each feature */
+            }
+        
+            /* Plan Price */
+            .labelplan-price {
+                margin-bottom: 10px;
+                font-size: 26px;
+                font-weight: bold;
+                color: rgb(255, 255, 255);
+            }
+        
+            /* Sale Text */
+            .labelplan-sale {
+                font-size: 14px;
+                color: red;
+                font-weight: bold;
+                margin-top: 5px;
+            }
+        
+            /* Button */
+            .labelplan-button {
+                width: 100%;
+                padding: 12px;
+                font-size: 16px;
+                font-weight: bold;
+                background: #a8a8a8;
+                color: rgb(0, 0, 0);
+                border: none;
+                border-radius: 25px;
+                cursor: pointer;
+                transition: background 0.3s ease-in-out;
+            }
+        
+            .labelplan-button:hover {
+                background: #e68900;
+            }
+        
+            /* Responsive */
+            @media (max-width: 900px) {
+                .labelplan-card {
+                    width: 95%;
+                    margin-top: 200px;
+                    margin-bottom: 20px;
+                }
+        
+                .labelplan-features {
+                    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Smaller features on mobile */
+                }
+            }
+        </style>
+        
+        <!-- Pricing Plan -->
+        <div class="labelplan-container">
+            <div class="labelplan-card">
+                <h2 class="labelplan-title">Label Plan</h2>
+                <p class="labelplan-subtitle">For Labels, Bands and groups</p>
+                
+                <!-- Features in grid -->
+                <ul class="labelplan-features">
+                    <li class="labelplan-feature-item"><strong>Unlimited Tracks</strong></li>
+                    <li class="labelplan-feature-item">10 Artists</li>
+                    <li class="labelplan-feature-item">Artist Synopsis</li>
+                    <li class="labelplan-feature-item">Dashboard Access</li>
+                    <li class="labelplan-feature-item">C Line</li>
+                    <li class="labelplan-feature-item">Custom Label Name</li>
+                    <li class="labelplan-feature-item">Lifetime Availability</li>
+                    <li class="labelplan-feature-item">Live in 3-5 days</li>
+                    <li class="labelplan-feature-item">Spotify Verification</li>
+                    <li class="labelplan-feature-item">YouTube Content ID</li>
+                    <li class="labelplan-feature-item">90% Revenue</li>
+                    <li class="labelplan-feature-item">OAC</li>
+                    <li class="labelplan-feature-item">Reeveue Report</li>
+                </ul>
+        
+                <!-- Pricing and Button -->
+                <div class="labelplan-price">₹1999/year <span class="labelplan-sale">Limited Offer - 40% Off</span></div>
+                <button class="labelplan-button">Know More</button>
+            </div>
+        </div>
+        
+
+
+        </section>
+        
+
+        <section class="fourth-section">
+          <div class="container">
+            
+
+                <style>
+                    body {
+                        font-family: 'Open Sans', sans-serif;
+                        margin: 0;
+                        padding: 0;
+                    }
+                    .customizedplan-container {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        max-width: 80%;
+                        margin: auto;
+                        padding: 50px 0;
+                    }
+                    .text-section {
+                        width: 50%;
+                    }
+                    .text-section h5 {
+                        font-size: 5rem;
+                        margin-bottom: 10px;
+                        text-align: left;
+                        font-weight: bold;
+                    }
+                    .text-section h6 {
+                        font-size: 2rem;
+                        color: #555;
+                        text-align: left;
+                    }
+                    .image-section {
+                        width: 50%;
+                        display: flex;
+                        justify-content: flex-end;
+                    }
+                    .image-section img {
+                        max-width: 100%;
+                        height: auto;
+                        border-radius: 10px;
+                    }
+
+                    @media (max-width: 900px) {
+        .customizedplan-container {
+          flex-direction: column;
+          text-align: center;
+        }
+        .text-section {
+          width: 100%;
+        }
+        .text-section h5 {
+          font-size: 2rem;
+          text-align: center;
+        }
+        .text-section h6 {
+          font-size: 1.2rem;
+          text-align: center;
+        }
+        .image-section {
+          width: 100%;
+          justify-content: center;
+          margin-top: 20px;
+        }
+
+                    }
+
+                </style>
+            <body>
+            
+                <div class="customizedplan-container">
+                    <div class="text-section">
+                        <h5>WANT A PERSONALIZED PLAN?</h5>
+                        <h6>Whatever your need is, we can get a customized distribution plan for you.
+                            Just reach us out on Email or Whatsapp!
+                        </h6>
+                    </div>
+                    <div class="image-section">
+                        <img src="img/customizedplan.png" alt="Descriptive Text">
+                    </div>
+                </div>
+            
+            </body>
+
+            
+            
+          </div>
+        </section>
+
+
+
+        <footer>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <ul>
+                  <li><a href="https://www.instagram.com/thedirenotemedia/"><i class="fa fa-instagram"></i></a></li>
+                  <li><a href="https://wa.link/pemyv1"><i class="fa fa-whatsapp"></i></a></li>
+                  <li><a href="mailto:contact@direnotemedia.com"><i class="fa fa-envelope"></i></a></li>
+                </ul>
+                
+                <p>Copyright &copy; 2025 DireNote Media 
+                        
+                        | part of Rezonate</p>
+              </div>
+            </div>
+          </div>
+        </footer>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+        <script src="js/vendor/bootstrap.min.js"></script>
+
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+    </body>
+</html>
